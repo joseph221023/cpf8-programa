@@ -1,0 +1,101 @@
+Centro:     Centro de Formación Profesional Nro 8
+Trayecto:   Programador     364 hs
+Modulos:    1 - Pensamiento Computacional   (Autoasistido)
+            2 - Técnicas de Programación            120 hs.
+            3 - Base de Datos                        70 hs.
+            4 - Programación Orientada a Objetos    150 hs.
+            5 - Relaciones Laborales.                24 hs.
+
+Curso:      Base de Datos           70 hs.              (17 Encuentros)
+Días:       Miércoles
+Horario:    18:30 a 22:30 hs
+Profe:      Carlos Rios             c.rios@bue.edu.ar 
+
+Materiales: 
+        Github:     https://github.com/crios2020/2025CFP8BaseDeDatosNoche
+        Codeshare:  https://codeshare.io/crios2020
+
+Software:
+            Server:         MySQL Community Server / MariaDB
+
+            Cliente:        MySQL Workbench https://dev.mysql.com/downloads/file/?id=544368
+                            VSCode
+                            VSCodium
+
+
+Paquete XAMPP       ap 
+achefriends.org
+
+    X       Linux - Windows - Mac
+    A       Apache Web Server
+    M       MySQL - MariaDB
+    P       PHP
+    P       Perl 
+
+Paquete WAMP        wampserver.com
+Paquete LAMP - MAMP - Laragon - appsrv
+Centro:     Centro de Formación Profesional Nro8
+
+Trayecto:   Programador     364 hs. 
+
+            1 - Pensamiento Computacional
+            2 - Técnicas de Programación            120 hs
+            3 - Base de datos                        70 hs
+            4 - Relaciones Laborales                 24 hs
+            5 - Programación Orientada a Objetos    150 hs
+
+Curso:      Técnicas de Programación        120 hs 
+Días:       Lunes y Viernes                 19:00 a 22:30 hs
+Profe:      Carlos Rios         c.rios@bue.edu.ar
+
+Materiales:
+        Github:     
+            https://github.com/crios2020/2025CFP8TecnicasNocheAgosto         
+        Codeshare:  
+            https://codeshare.io/crios2020
+
+Software:   Visual Studio Code      (Microsoft)     https://code.visualstudio.com/
+            o 
+            Visual Studio Codium    (Open Source)   https://vscodium.com/
+
+Extensiones:
+            Live Server ritwickdey      (Web Server)
+            Todo Tree Gruntfuggly       (Gestión de proyecto)
+--  linea de comentarios
+/* bloque de comentarios */
+#comentarios NO ANSI
+
+show databases;  -- muestra los DBs del server
+-- ; es el terminador de sentencias (obligatorio)
+-- Ctrol - Enter Ejecutamos una sentencia 
+
+show databases;    -- lenguaje no case sensitive
+
+-- borrar la base de datos clase01: 
+drop database if exists clase01;
+
+-- crear la base de datos de clase01;
+create database clase01;
+-- CREATE DATABASE CLASE01;
+use clase01;  -- activa la BD clase01;
+
+show tables; -- listado de tablas que hay en la bases
+
+-- create table clientes 
+drop table if exists clientes;
+-- create table clientes
+create table clientes 
+(
+       codigo int primary key auto_increment,
+       nombre varchar(20) not null,
+       apellido varchar(20) not null,
+       cuit varchar(13),
+       direccion varchar(50),
+       comentarios varchar(150)
+);
+
+describe clientes;   -- consulta el metadato de la tabla 
+select * from clientes; -- lista los registros de la talbla
+-- insertamos un registro de ejemplo
+insert into clientes (nombre,apellido,cuit,direccion) values
+          ('Ana','Gallo','12345678','lima 22');

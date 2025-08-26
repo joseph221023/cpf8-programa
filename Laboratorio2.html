@@ -1,0 +1,330 @@
+<script src="http://crios2020.github.io/js/util.js"></script>
+<script>
+    
+        // Ejercicio 1 - Asignación básica
+        // Analice el código a continuación y complete la tabla correspondiente. Luego realice la codificación
+        // para confirmar que ha completado la tabla correctamente.
+
+        print("A")
+        x = 10                             
+        y = 20                             
+        print(x)          //10                              
+        print(y)          //20                          
+
+        print("B")
+        x = x + 5                            
+        y = y + 10                            
+        print(x)            //15                             
+        print(y)             //30                            
+
+        print("C")
+        x = x - 5                                       
+        y = y - 10                                     
+        print(x)           //10
+        print(y)            //20
+
+        print("D")
+        x = x * 3                                      
+        y = y * 5                                       
+        print(x)          //30 
+        print(y)          //100
+
+        print("E")
+        x = x / 2                                     
+        y = y / 4                                      
+        print(x)       //15         
+        print(y)       //25        
+
+        // Tabla para completar:
+
+        //              X           Y
+        //A             10          20
+        //B             15          30
+        //C             10          20
+        //D             30          100
+        //E             15          25
+
+
+        // Ejercicio 2 - Asignación compacta
+        // Analice el código a continuación y complete la tabla correspondiente. Luego realice la codificación
+        // para confirmar que ha completado la tabla correctamente.
+
+        print("A")
+        x = 10                                
+        y = 20                               
+        print(x)        //10                                        
+        print(y)        //20                    
+        print("B")
+        x += 5                         
+        y -= 15                                 
+        print(x)        //15                       
+        print(y)          //5                      
+        print("C")
+        x++                                   
+        y--                              
+        print(x)            //16                    
+        print(y)              //4                   
+        print("D")
+        x *= 4                                
+        y *= -3                            
+        print(x)       //64                         
+        print(y)        //-12                       
+        print("E")
+        x /= 2                                
+        y /= 4                                 
+        print(x)           //32                   
+        print(y)            //-3                   
+        
+        // Tabla para completar:
+
+        //              X           Y
+        //A             10          20
+        //B             15          5
+        //C             16          4
+        //D             64         -12
+        //E             32         -3
+
+
+        //Ejercicio 3 - Operadores aritméticos
+
+        print("A")
+        x = 10                                                  
+        y = 20                                  
+        print(x)          //10
+        print(y)           //20
+
+        print("B")
+        x = x + y                              
+        y = y + x                             
+        print(x)            //30
+        print(y)            //50
+
+        print("C")
+        x= x - y                            
+        y= y - x                             
+        print(x)          //30-50=-20x
+        print(y)           //-20-50=70
+
+        print("D")
+        x=x * y                                         
+        y=x * x                                
+        print(x)          //
+        print(y)          //
+
+        print("E")                
+        x= y / x                               
+        y= x / y                              
+        print(x)
+        print(y)
+
+        // Tabla para completar:
+
+        //              X           Y
+        //A            
+        //B        
+        //C        
+        //D        
+        //E        
+
+
+        //Ejercicio 4- Operadores aritméticos con asignación compacta
+        
+        print("A")
+        x = 5                   
+        y = 10                 
+        print(x)                 
+        print(y)                  
+
+        print("B")
+        x += y                  
+        y += x                  
+        print(x)                  
+        print(y)                 
+
+
+        print("C")
+        x -= y                  
+        y -= x                  
+        print(x)                 
+        print(y)                  
+
+        print("D")
+        x *= y                  
+        y *= x                  
+        print(x)                  
+        print(y)                  
+
+
+        print("E")
+        x /= y                              
+        y /= y                             
+        print(x)
+        print(y)
+       
+        // Tabla para completar:
+
+        //              X           Y
+        //A              
+        //B         
+        //C       
+        //D        
+        //E           
+
+        //Ejercicio 5- Operadores Aritméticos con asignación múltiple (suma y resta)
+
+        print("A")
+        x = 5
+        y = 10
+        suma = 0
+        resta = 0
+        print(x)                 
+        print(y)                  
+        print(suma)              
+        print(resta)             
+
+
+        print("B")
+        suma = x + y                           
+        resta = x - y                          
+        print(x)                  
+        print(y)                        
+        print(suma)
+        print(resta)
+
+        print("C")
+        suma = x + x                           
+        resta = y - y                          
+        print(x)                  
+        print(y)                  
+        print(suma)
+        print(resta)
+
+        print("D")
+        suma = x + y + x                       
+        resta = x - x - 20                     
+        print(x)                 
+        print(y)                 
+        print(suma)
+        print(resta)
+
+        print("E")
+        suma = y + x + x                      
+        resta = -x - y -y                      
+        print(x)
+        print(y)
+        print(suma)
+        print(resta)
+
+        // Tabla para completar:
+
+        //              X           Y           suma        resta
+        //A           
+        //B            
+        //C           
+        //D             
+        //E            
+
+       
+
+        //Ejercicio 6- Operadores Aritméticos con asignación múltiple (producto y división)
+
+        print("A")
+        x = 5
+        y = 10
+        multi = 1
+        division = 1
+        print(x)                  
+        print(y)                 
+        print(multi)             
+        print(division)          
+        
+        print("B")
+        multi = x * y
+        division = x / y
+        print(multi)              
+        print(division)           
+
+        print("C")
+        multi = x * x
+        division = y / y
+        print(multi)              
+        print(division)           
+        
+        print("D")
+        multi = x * y * x                      
+        division = y / x                       
+        print(multi)
+        print(division)
+        
+        print("E")
+        multi= x * (-y)                       
+        division= y / (-x)                     
+        print(multi)
+        print(division)
+       
+        // Tabla para completar:
+
+        //              X           Y           multi       division
+        //A           
+        //B             
+        //C             
+        //D            
+        //E             
+
+        
+        //Ejercicio 7- Operador Resto   %
+        print("A")
+        n1 = 20
+        n2 = 2
+        n3 = n1 % n2
+        print(n3)        
+
+        print("A")
+        n1 = 15
+        n2 = 2
+        n3 = n1 % n2
+        print(n3)         
+
+        print("C")
+        n1 = 3
+        n2 = 20
+        n3 = n2 % n1
+        print(n3)         
+
+        print("D")
+        n1 = 3
+        n2 = 15
+        n3 = n2 % n1
+        print(n3)         
+        
+                // Tabla para completar:
+
+        //             n1       n2      n3
+        //A            
+        //B            
+        //C           
+        //D          
+       
+        //Ejercicio 8 - Cadenas de Caracteres
+        print("A")
+        palabra_1 = "Hola"
+        palabra_2 = "Mundo"
+        frase = ""
+        print(palabra_1)          
+        print(palabra_2)         
+        print(frase)              
+
+        print("B")
+        frase = palabra_1 + palabra_2          
+        print(palabra_1)
+        print(palabra_2)
+        print(frase)              
+
+
+        // Tabla para completar:
+
+        //             palabra1         palabra2        frase
+        //A                      
+        //B    
+
+</script>

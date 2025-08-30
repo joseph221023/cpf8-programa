@@ -1,0 +1,120 @@
+<script src="http://crios2020.github.io/js/util.js"></script>
+<script>
+    //Todo Operador Resto
+    print("-- Operador Resto % --")
+        print(15%2)                     //1
+        print(14%2)                     //0
+        print(-14%2)                    //0
+        print(-15%2)                    //-1    
+        print(18%3)                     //0
+        print(19%3)                     //1
+        print(20%3)                     //2
+        print(21%3)                     //0
+
+    //Todo Constantes
+    const pI0=3.14
+    //PI++ //error no se puede cambiear el valor a una CTE
+    //print("-- fin del programa -- ")
+    
+     /*  
+           tabla de verdad
+
+           x        y        or        and
+           f        f         f         f
+           f        v         v         f
+           v        f         v         f
+           v        v         v         v
+    
+
+    Todo Operadores Logisticos
+    Operador                  hombre
+       &&                      and
+       ||                      or  
+
+     */
+    temperatura=getTemperatura()
+    llueve=getLlueve()
+
+    print("temperatura: "+temperatura)
+    print("Llueve: "+llueve)
+    print("salimos al parque, si no llueve y la temperatura es mayor a 20 grados!!!")
+    print(!llueve && temperatura>20)
+
+    nro1=5
+    nro2=7
+    log1=true
+    log2=false
+
+    print(log1 || log2)    // true
+    print(log1 && log2)   //false
+    print(log2 && log1)    //false
+    
+    //operadores binarios
+    print(log1 | log2)         //true
+    print(log1 & log2)         //false
+    print(log2 & log1)         //false
+
+    print(log1||getLlueve())     //true
+    print(log1|getLlueve())      //true
+
+    print(nro1==nro2 || !log2)  //true
+    print(log1 && nro2!=nro1)   //true
+
+    print(nro1+1==nro2-1 && log1!=log2 && nro1<=nro2) //true
+
+    // Estructura condicional IF
+    Llueve=getLlueve()
+     if (llueve){
+        print("sanlir con paraguas")
+     }
+
+     temperatura=getTemperatura()
+     if (temperatura>=16){
+        print("esta calido")
+     }
+     if (llueve==true){
+        print("salir con paraguas")
+        print("dia lluvioso")
+        print("usar piloto de agua")
+     }
+
+
+
+
+
+       //modo de uso de llaves recomendado para JS y java
+       if(llueve){
+          print("salir con paraguas!!")
+       }
+
+       //modo de uso de llaves abreviado
+       if (llueve)    print("salir con paraguas")
+
+       //modo academico - modo recomendado por microsoft
+       if (llueve)
+       {
+        print("salir con paraguas")
+       }
+
+       //estructura if - else
+       if (llueve){
+        print("salir con paraguas")
+       }else{
+        print("no usar paraguas")
+       }
+
+       //estructura if - else
+       if(llueve)
+       {
+        print("salir con paraguas")
+       }
+       else
+       {
+        print("no usar paraguas")
+       }
+
+
+
+
+
+</script>

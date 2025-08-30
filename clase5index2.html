@@ -1,0 +1,42 @@
+<script src="http://crios2020.github.io/js/util.js"></script>
+<script>
+   
+   fecha=new Date()
+   print(fecha)
+
+   frase="Hoy es "
+   dia=fecha.getDate()
+   frase+=dia+" de "
+   mes=fecha.getMonth()
+   frase+=mes
+   print(frase)
+   hablar(frase)
+
+   if(mes=0)        frase+="enero"
+   if(mes=1)        frase+="febrero"
+   if(mes=2)        frase+="marzo"
+   if(mes=3)        frase+="abril"
+   if(mes=4)        frase+="mayo"
+   if(mes=5)        frase+="junio"
+   if(mes=6)        frase+="julio"
+   if(mes=7)        frase+="agosto"
+   if(mes=8)        frase+="semptiembre"
+   if(mes=9)        frase+="octubre"
+   if(mes=10)       frase+="noviembre"
+   if(mes=11)       frase+="diciembre"
+
+   anio=fecha.getYear()+1900
+  frase+=" de "+anio
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
